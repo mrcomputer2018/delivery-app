@@ -1,13 +1,27 @@
-import Head from 'next/head'
+import type { NextPage } from 'next';
+import Link from 'next/link';
+import { PageHead } from '../components/HeadPage/pageHead';
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Delivery App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <h1 className='text-5xl text-center'>Projeto FrontExpert</h1>    
-    </div>
+    <>
+      <PageHead 
+            title='Home - Delivery App' 
+            description='Sistema de Dlivery' 
+            keywords='delivery, entrega de comida, pagina principal, home'
+      />
+
+      <div className=''>
+        <h1>Home</h1>
+        <Link href='/signup'>
+          <a>Cadastro</a>
+        </Link>
+        <Link href='/login'>
+          <a>Login</a>
+        </Link>
+      </div>   
+    </>
   )
 }
+
+export default Home;
