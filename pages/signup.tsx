@@ -26,7 +26,7 @@ const Signup: NextPage = () => {
             </p>
 
             <InputText 
-              label='Nome oompleto' 
+              label='Nome completo' 
               placeholder='Informe seu nome' 
               type='text'/>
             <InputText 

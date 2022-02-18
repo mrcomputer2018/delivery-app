@@ -1,4 +1,5 @@
 import React from "react";
+import { InputIcon } from "../Input-Icon/inputIcon";
 
 type Props = {
     label: string;
@@ -11,7 +12,7 @@ export function InputText ({ ...props }: Props) {
         <>  
             <div className="flex mb-14">
                 <div className="w-16 mr-7 flex items-center">
-                    <span className="bg-indigo-700 w-7 h-7 flex">icon</span>
+                    <InputIcon size={24} color="#503E9D" title=""/>
                 </div>
                 <div className="w-full">
                     {/* tracking-wider - espacamento entre letras */}
