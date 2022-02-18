@@ -1,0 +1,20 @@
+.container {
+    @apply flex mb-14;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 25px;
+    border-radius: 16px;
+    background-color: #EDECF5;
+    @apply flex items-center justify-center;
+}
+
+.label {
+    @apply text-xs font-bold uppercase tracking-wider text-gray-700;
+}
+
+.input {
+    @apply w-full py-3 border-b focus:border-indigo-500 focus:outline-none;
+}

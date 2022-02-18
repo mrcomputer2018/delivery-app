@@ -1,5 +1,6 @@
 import React from "react";
 import { InputIcon } from "../Input-Icon/inputIcon";
+import Styles from "./style.module.css";
 
 type Props = {
     label: string;
@@ -10,20 +11,20 @@ type Props = {
 export function InputText ({ ...props }: Props) {
     return(
         <>  
-            <div className="flex mb-14">
-                <div className="w-16 mr-7 flex items-center">
+            <div className={ Styles.container }>
+                <div className={ Styles.icon }>
                     <InputIcon size={24} color="#503E9D" title=""/>
                 </div>
-                <div className="w-full">
+                <div className="grow">
                     {/* tracking-wider - espacamento entre letras */}
                     <label 
-                    className='text-xs font-bold uppercase tracking-wider text-gray-700' 
+                    className={ Styles.label } 
                     htmlFor="">
                         {props.label}
                     </label>
                     {/* border-b - borda em baixo */}
                     <input 
-                    className='w-full py-3 border-b' 
+                    className={ Styles.input }
                     type={props.type} 
                     value="" 
                     placeholder={props.placeholder}/>
