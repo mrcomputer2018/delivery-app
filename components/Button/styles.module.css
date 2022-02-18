@@ -1,0 +1,6 @@
+/** Deixar aqui somente o que vai ser usado em todos os elementos */
+
+.button {
+    @apply text-xl leading-8 h-16 w-full hover:opacity-80;
+    border-radius: 12px;
+}

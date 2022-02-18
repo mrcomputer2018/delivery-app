@@ -37,7 +37,7 @@ const Login: NextPage = () => {
                         type='password'
                     />
 
-                    <Button className='bg-indigo-200 text-indigo-700 w-full p-4 text-xl'>
+                    <Button className='bg-indigo-200 text-indigo-700 p-4'>
                         Login
                     </Button>
                     <div className='text-center block p-6'>
@@ -47,7 +47,7 @@ const Login: NextPage = () => {
                             </a>
                         </Link>
                     </div>
-                    <Button className='bg-indigo-600 text-white w-full p-4 text-xl'>
+                    <Button className='bg-indigo-600 text-white p-4'>
                         <Link href='/signup'>
                             <a>Criar uma conta</a>
                         </Link>
