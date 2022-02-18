@@ -21,7 +21,7 @@ const Forgot: NextPage = () => {
             <div className='lg:basis-8/12 flex'>
                 <div className='max-w-2xl w-4/5 m-auto'>
                     <h1 className='font-bold text-4xl mb-3'>Esqueceu a senha?</h1>
-                    <p className='text-slate-700 mb-14'>
+                    <p className='mb-14'>
                         Digite seu endereço de e-mail para continuar.
                     </p>
 
