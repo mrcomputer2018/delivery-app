@@ -18,15 +18,13 @@ export function InputText ({ ...props }: Props) {
                 <div className="grow">
                     {/* tracking-wider - espacamento entre letras */}
                     <label 
-                    className={ Styles.label } 
-                    htmlFor="">
+                    className={ Styles.label }>
                         {props.label}
                     </label>
                     {/* border-b - borda em baixo */}
                     <input 
                     className={ Styles.input }
                     type={props.type} 
-                    value="" 
                     placeholder={props.placeholder}/>
                 </div>
             </div>
