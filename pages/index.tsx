@@ -1,6 +1,10 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
+import Categories from '../components/Categories/Categories';
 import { PageHead } from '../components/HeadPage/pageHead';
+import Highlights from '../components/Highlights/Highlights';
+import Navbar from '../components/Navbar/Navbar';
+import { Sidebar } from '../components/Sidebar/Sidebar';
 
 const Home: NextPage = () => {
   return (
@@ -11,14 +15,13 @@ const Home: NextPage = () => {
             keywords='delivery, entrega de comida, pagina principal, home'
       />
 
-      <div className=''>
-        <h1>Home</h1>
-        <Link href='/signup'>
-          <a>Cadastro</a>
-        </Link>
-        <Link href='/login'>
-          <a>Login</a>
-        </Link>
+      <div className='container bg-gray-300 h-60 m-auto flex'>
+        <Sidebar/>
+        <div className='m-auto'>
+          <Navbar />
+          <Categories />
+          <Highlights />
+        </div>
       </div>   
     </>
   )

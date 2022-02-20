@@ -1,0 +1,18 @@
+.sidebar {
+    width: 100%;
+    max-width: 304px;
+    min-height: 1024px;
+    background-color: #F7F7F7;
+    border-radius: 0px 24px 24px 0px;
+}
+
+.header {
+    padding-top: 32px;
+    padding-bottom: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.header p {
+    @apply text-black text-xl font-bold leading-6;
+}

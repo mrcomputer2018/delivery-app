@@ -1,6 +1,6 @@
 import React from "react";
 import { InputIcon } from "../Input-Icon/inputIcon";
-import Styles from "./style.module.css";
+import Styles from "./styles.module.css";
 
 type Props = {
     label: string;
